@@ -131,3 +131,65 @@
   .placeholder-figure-icon { font-size:21px; }
   .feature-intro h2 { font-size:39px; }
 }
+
+/* StereoBind paper identity and expandable video results */
+.paper-hero { min-height:570px; grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr); padding-block:58px 55px; }
+.paper-hero h1 { font-size:clamp(44px,4.2vw,66px); line-height:1.08; letter-spacing:-.055em; max-width:810px; margin-bottom:25px; }
+.paper-hero .hero-intro { max-width:660px; color:#cddde3; font-size:18px; margin-bottom:28px; }
+.paper-hero .hero-stage { height:440px; }
+.button-pending { background:rgba(111,229,227,.12); color:#a5c5ca; border-color:rgba(111,229,227,.28); cursor:default; }
+.button-text { border-color:transparent; color:var(--cyan); padding-inline:10px; }
+.button-text:hover { color:#b5f8f1; }
+.abstract-lead { padding-bottom:95px; scroll-margin-top:25px; }
+.abstract-grid { display:grid; grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr); gap:75px; padding-top:62px; }
+.abstract-grid h2 { font-size:clamp(38px,3.8vw,58px); line-height:1.12; letter-spacing:-.055em; margin:0; }
+.abstract-grid h2 span { color:var(--cyan); }
+.abstract-copy { border-left:1px solid rgba(111,229,227,.42); padding-left:32px; }
+.abstract-copy h3 { font-size:18px; letter-spacing:-.025em; margin:0 0 16px; }
+.abstract-copy p { font-size:16px; line-height:1.86; color:#c5d4dc; margin:0; }
+.results-section { scroll-margin-top:25px; padding-bottom:105px; }
+.result-category { display:grid; grid-template-columns:210px minmax(0,1fr); gap:48px; padding:43px 0 56px; border-top:1px solid var(--line); }
+.result-category:last-child { border-bottom:1px solid var(--line); }
+.result-index { font:600 11px Arial,sans-serif; letter-spacing:.15em; color:var(--cyan); }
+.result-category-head h3 { font-size:clamp(29px,3vw,43px); letter-spacing:-.055em; line-height:1.1; margin:15px 0 13px; }
+.result-category-head p { font-size:14px; line-height:1.7; color:var(--muted); margin:0; }
+.result-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 20px; }
+.result-card { min-width:0; }
+.media-result { aspect-ratio:16 / 9; min-height:190px; }
+.media-result .placeholder-corner { top:14px; left:16px; right:16px; font-size:9px; }
+.media-result .placeholder-center { padding:20px; }
+.media-result .placeholder-center strong { font-size:19px; }
+.media-result .placeholder-center small { max-width:240px; }
+.media-result .placeholder-play { width:42px; height:42px; font-size:12px; margin-bottom:7px; }
+.result-card-copy { padding-top:14px; }
+.result-card-copy h4 { font:600 17px 'Segoe UI',Arial,sans-serif; letter-spacing:-.02em; margin:0 0 4px; }
+.result-card-copy p { color:var(--muted); font-size:13px; line-height:1.6; margin:0; }
+#comparison,#method { scroll-margin-top:25px; }
+@media(max-width:1100px) {
+  .paper-hero { grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr); }
+  .paper-hero h1 { font-size:clamp(41px,4.5vw,55px); }
+  .abstract-grid { gap:40px; }
+  .result-category { grid-template-columns:180px minmax(0,1fr); gap:30px; }
+}
+@media(max-width:760px) {
+  .paper-hero { display:block; min-height:0; padding-block:48px 25px; }
+  .paper-hero h1 { font-size:clamp(38px,8.2vw,54px); line-height:1.1; }
+  .paper-hero .hero-intro { font-size:17px; }
+  .paper-hero .hero-stage { height:220px; margin-top:8px; }
+  .abstract-lead { padding-bottom:68px; }
+  .abstract-grid { display:block; padding-top:42px; }
+  .abstract-grid h2 { font-size:clamp(37px,8vw,53px); }
+  .abstract-copy { border-left:0; border-top:1px solid rgba(111,229,227,.42); padding:22px 0 0; margin-top:33px; }
+  .abstract-copy p { font-size:15px; line-height:1.8; }
+  .result-category { display:block; padding:36px 0 49px; }
+  .result-category-head { margin-bottom:26px; }
+  .result-category-head p { max-width:530px; }
+  .result-grid { gap:27px 16px; }
+}
+@media(max-width:560px) {
+  .paper-hero h1 { font-size:clamp(35px,8.7vw,44px); }
+  .paper-hero .hero-actions { gap:9px; }
+  .paper-hero .button { font-size:12px; padding:10px 15px; min-height:42px; }
+  .result-grid { grid-template-columns:1fr; }
+  .media-result { min-height:210px; }
+}

@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#08101d" />
-    <meta name="description" content="A research project page about spatially coherent audio-visual generation." />
-    <title>When Sound Meets Motion — Research Project</title>
+    <meta name="description" content="StereoBind learns dynamic spatial correspondence for immersive joint video-audio generation." />
+    <title>Hear the World in Stereo: Learning Dynamic Spatial Correspondence for Immersive Joint Video-Audio Generation</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2308101d'/%3E%3Cpath d='M10 36c12-24 20 24 32 0s12-12 12-12' fill='none' stroke='%236fe5e3' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='43' cy='35' r='6' fill='%23ffb370'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./sections.css" />
@@ -13,28 +13,26 @@
   <body>
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark" aria-hidden="true">◉</span><span>AV<span class="brand-slash">/</span>SPACE</span></a>
+        <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark" aria-hidden="true">◉</span><span>STEREO<span class="brand-slash">/</span>BIND</span></a>
         <nav aria-label="Primary navigation">
-          <a href="#experience">Experience</a>
-          <a href="#correspondence">Correspondence</a>
+          <a href="#abstract">Abstract</a>
+          <a href="#results">Results</a>
           <a href="#method">Method</a>
-          <a href="#evidence">Evidence</a>
+          <a href="#comparison">Comparison</a>
         </nav>
         <span class="header-note">RESEARCH PROJECT · ANONYMOUS EDITION</span>
       </header>
 
       <main id="top">
-        <section class="hero" aria-labelledby="hero-title">
+        <section class="hero paper-hero" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <div class="eyebrow"><span class="eyebrow-line"></span> SPATIAL AUDIO-VISUAL GENERATION</div>
-            <p class="paper-title-label">PAPER TITLE</p>
-            <p class="paper-title" id="paper-title">[Insert your full paper title here]</p>
-            <h1 id="hero-title">When sound<br /><em>meets motion.</em></h1>
-            <p class="hero-intro">A visual world. An acoustic world. One evolving spatial experience.</p>
-            <p class="hero-detail">Explore how video content, sound, and motion trajectories can be brought into spatial correspondence over time.</p>
+            <div class="eyebrow"><span class="eyebrow-line"></span> STEREOBIND · JOINT VIDEO-AUDIO GENERATION</div>
+            <h1 id="hero-title">Hear the World in Stereo: <em>Learning Dynamic Spatial Correspondence for Immersive Joint Video-Audio Generation</em></h1>
+            <p class="hero-intro">Sound should follow its visible source as the world moves.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#experience">Explore the experience <span aria-hidden="true">↗</span></a>
-              <span class="button button-muted" id="hero-paper-link" aria-disabled="true">Paper link pending</span>
+              <span class="button button-primary button-pending" id="paper-link" aria-disabled="true">Paper URL pending</span>
+              <span class="button button-muted" id="code-link" aria-disabled="true">Code URL pending</span>
+              <a class="button button-text" href="#results">Explore results <span aria-hidden="true">↓</span></a>
             </div>
           </div>
 
@@ -53,8 +51,16 @@
           </div>
         </section>
 
+        <section class="abstract-lead content-width" id="abstract" aria-labelledby="abstract-title">
+          <div class="section-kicker"><span>01 / ABSTRACT</span><span>RESEARCH OVERVIEW</span></div>
+          <div class="abstract-grid">
+            <div><p class="overline">THE RESEARCH QUESTION</p><h2 id="abstract-title">When the world moves,<br /><span>does sound follow?</span></h2></div>
+            <div class="abstract-copy"><h3>Abstract</h3><p id="abstract-text">Joint video-audio (VA) generation has made rapid progress in semantic correspondence and temporal synchronization, yet spatial correspondence remains largely overlooked. In particular, stereo audio does not ensure that the perceived sound location dynamically follows the motion of its visible source over time. We define this property as Dynamic Spatial Correspondence and propose StereoBind, a motion-conditioned framework that explicitly binds visual source motion to stereo sound generation. StereoBind utilizes motion tracks as a shared cross-modal condition and jointly models entity-level audiovisual correspondence, absolute spatial states, and relative spatial relations. Specifically, Visual Motion Binding (VMB) Tokens establish entity-level audiovisual correspondence, while a Spatial Track Encoder (STE) encodes the absolute trajectory of the sound source, and Residual Track RoPE (RT-RoPE) captures the relative spatial relations induced by its trajectory. To provide supervision for such correspondence, we further construct StereoWorld-29K, a large-scale stereo audio-video dataset with corresponding motion tracks, and introduce StereoWorldBench (SW-Bench) to evaluate the spatial consistency of generated stereo audio. Experiments on SW-Bench demonstrate that StereoBind achieves motion-aligned stereo generation, enabling stereoscopic audio generation beyond the capabilities of existing joint VA models and advancing immersive generation.</p></div>
+          </div>
+        </section>
+
         <section class="hero-media content-width" id="experience" aria-labelledby="experience-title">
-          <div class="section-kicker"><span>01 / EXPERIENCE</span><span>HEADPHONES RECOMMENDED <span aria-hidden="true">◖◗</span></span></div>
+          <div class="section-kicker"><span>02 / EXPERIENCE</span><span>HEADPHONES RECOMMENDED <span aria-hidden="true">◖◗</span></span></div>
           <div class="feature-intro">
             <h2 id="experience-title">See the motion.<br /><span>Hear the space.</span></h2>
             <p>The first example should make the paper’s central idea immediately perceptible: a visible source moves, and its sound follows.</p>
@@ -64,12 +70,12 @@
             <div class="placeholder-center"><span class="placeholder-play" aria-hidden="true">▶</span><strong>Featured audio-visual demo</strong><small>Place your strongest moving-sound-source video here · 16:9 · stereo audio</small></div>
             <div class="placeholder-bottom"><span>VIDEO + STEREO AUDIO</span><span>MEDIA SLOT 01</span></div>
           </div>
-          <div class="feature-caption"><span>THE EXPERIENCE</span><p>Visual motion and acoustic motion should tell the same story. Begin with the clearest example from the paper.</p><span>01 / 09</span></div>
+          <div class="feature-caption"><span>THE EXPERIENCE</span><p>Visual motion and acoustic motion should tell the same story. Begin with the clearest example from the paper.</p><span>FEATURED SAMPLE</span></div>
         </section>
 
         <section class="concept-band" id="correspondence" aria-labelledby="correspondence-title">
           <div class="content-width concept-inner">
-            <div class="section-kicker"><span>02 / CORRESPONDENCE</span><span>THE CENTRAL QUESTION</span></div>
+            <div class="section-kicker"><span>03 / CORRESPONDENCE</span><span>THE CENTRAL QUESTION</span></div>
             <div class="concept-head">
               <p class="overline">TWO WORLDS, ONE SCENE</p>
               <h2 id="correspondence-title">What we see and what we hear<br /><span>must occupy the same space.</span></h2>
@@ -85,38 +91,36 @@
         </section>
 
         <section class="content-width section-block" aria-labelledby="teaser-title">
-          <div class="section-kicker"><span>03 / RESEARCH IDEA</span><span>ONE FIGURE, ONE TAKEAWAY</span></div>
+          <div class="section-kicker"><span>04 / RESEARCH IDEA</span><span>ONE FIGURE, ONE TAKEAWAY</span></div>
           <div class="two-column-heading"><div><p class="overline">SPATIAL CORRESPONDENCE</p><h2 id="teaser-title">The paper in<br /><span>one picture.</span></h2></div><p>Show the input, the visual source trajectory, and how the generated acoustic position evolves alongside it. A reviewer should grasp the task before reading the method section.</p></div>
           <div class="media-placeholder media-figure" data-slot="teaser-figure" data-type="image" role="img" aria-label="Reserved space for the paper teaser figure"><div class="placeholder-corner">TEASER FIGURE <span>02</span></div><div class="placeholder-center"><span class="placeholder-figure-icon" aria-hidden="true">◎ — ↝ — ◉</span><strong>Task / teaser figure</strong><small>Input → spatial correspondence → generated audio-visual scene · suggested 16:7</small></div><div class="placeholder-bottom"><span>HIGH-RESOLUTION IMAGE</span><span>MEDIA SLOT 02</span></div></div>
           <p class="figure-note"><span>FIG. 01</span> Replace with a figure from the paper; keep all labels readable on mobile.</p>
         </section>
 
-        <section class="content-width section-block gallery-section" aria-labelledby="gallery-title">
-          <div class="section-kicker"><span>04 / MOTION IN SPACE</span><span>LISTEN TO THE TRAJECTORY</span></div>
-          <div class="two-column-heading"><div><p class="overline">CURATED DEMONSTRATIONS</p><h2 id="gallery-title">Sound that moves<br /><span>with the scene.</span></h2></div><p>Three short examples are enough to reveal the progression from a clear moving source to a more demanding audio-visual scene.</p></div>
-          <div class="demo-grid">
-            <article class="demo-card"><div class="media-placeholder media-demo" data-slot="demo-single" data-type="video" role="img" aria-label="Reserved video for one moving sound source"><div class="placeholder-corner">DEMO 01 <span>03</span></div><div class="placeholder-center"><span class="placeholder-play" aria-hidden="true">▶</span><strong>Single moving source</strong><small>Place a video with an unmistakable left-to-right or right-to-left motion</small></div><div class="placeholder-bottom"><span>STEREO VIDEO</span><span>MEDIA SLOT 03</span></div></div><div class="demo-copy"><span class="demo-number">01 / SOURCE LOCATION</span><h3>Follow one source.</h3><p>Choose a case where viewers can identify the sounding object and hear its position change.</p></div></article>
-            <article class="demo-card"><div class="media-placeholder media-demo" data-slot="demo-multiple" data-type="video" role="img" aria-label="Reserved video for multiple sound sources"><div class="placeholder-corner">DEMO 02 <span>04</span></div><div class="placeholder-center"><span class="placeholder-play" aria-hidden="true">▶</span><strong>Multiple sources</strong><small>Place a scene with two or more distinguishable sound-producing objects</small></div><div class="placeholder-bottom"><span>STEREO VIDEO</span><span>MEDIA SLOT 04</span></div></div><div class="demo-copy"><span class="demo-number">02 / SPATIAL SEPARATION</span><h3>Separate the scene.</h3><p>Use an example that tests whether simultaneous sounds remain associated with their visual sources.</p></div></article>
-            <article class="demo-card"><div class="media-placeholder media-demo" data-slot="demo-complex" data-type="video" role="img" aria-label="Reserved video for a complex dynamic scene"><div class="placeholder-corner">DEMO 03 <span>05</span></div><div class="placeholder-center"><span class="placeholder-play" aria-hidden="true">▶</span><strong>Dynamic scene</strong><small>Place a longer or visually complex scene supported by your experiments</small></div><div class="placeholder-bottom"><span>STEREO VIDEO</span><span>MEDIA SLOT 05</span></div></div><div class="demo-copy"><span class="demo-number">03 / TEMPORAL CONSISTENCY</span><h3>Stay aligned over time.</h3><p>Show that correspondence holds through motion, occlusion, or changing scene composition—only if evaluated in the paper.</p></div></article>
-          </div>
+        <section class="content-width section-block results-section" id="results" aria-labelledby="results-title">
+          <div class="section-kicker"><span>05 / RESULTS</span><span>STEREO AUDIO · HEADPHONES RECOMMENDED</span></div>
+          <div class="two-column-heading"><div><p class="overline">QUALITATIVE RESULTS</p><h2 id="results-title">Explore the world<br /><span>in stereo.</span></h2></div><p>Browse examples by scene type. Each category can hold as many videos as needed; clips remain separate so their original stereo tracks can be heard.</p></div>
+
+          <div class="result-category" aria-labelledby="static-title"><div class="result-category-head"><span class="result-index">01 / 04</span><h3 id="static-title">Static</h3><p>Stable scenes and viewpoints, with a clear relationship between visible source and acoustic position.</p></div><div class="result-grid" data-results="static"></div></div>
+          <div class="result-category" aria-labelledby="dynamic-title"><div class="result-category-head"><span class="result-index">02 / 04</span><h3 id="dynamic-title">Dynamic</h3><p>Scenes in which source or camera motion makes spatial correspondence change over time.</p></div><div class="result-grid" data-results="dynamic"></div></div>
+          <div class="result-category" aria-labelledby="speech-title"><div class="result-category-head"><span class="result-index">03 / 04</span><h3 id="speech-title">Human Speech</h3><p>Speech examples that let viewers inspect the relationship between the visible speaker and stereo voice location.</p></div><div class="result-grid" data-results="speech"></div></div>
+          <div class="result-category" aria-labelledby="object-title"><div class="result-category-head"><span class="result-index">04 / 04</span><h3 id="object-title">Object-Centric</h3><p>Scenes centered on one visible sound-producing object and its acoustic behavior.</p></div><div class="result-grid" data-results="object"></div></div>
         </section>
 
-        <section class="comparison-wrap" aria-labelledby="compare-title">
+        <section class="comparison-wrap" id="comparison" aria-labelledby="compare-title">
           <div class="content-width section-block">
-            <div class="section-kicker"><span>05 / SIDE BY SIDE</span><span>SAME INPUT · MATCHED LOUDNESS</span></div>
+            <div class="section-kicker"><span>06 / SIDE BY SIDE</span><span>SAME INPUT · MATCHED LOUDNESS</span></div>
             <div class="two-column-heading"><div><p class="overline">QUALITATIVE COMPARISON</p><h2 id="compare-title">A difference<br /><span>you can hear.</span></h2></div><p>Use exactly the same visual input for both clips. Align their start times and match playback loudness so the comparison focuses on spatial behavior.</p></div>
             <div class="comparison-grid"><div class="comparison-item"><div class="comparison-label"><span>01</span> BASELINE</div><div class="media-placeholder media-compare" data-slot="baseline-video" data-type="video" role="img" aria-label="Reserved baseline comparison video"><div class="placeholder-center"><span class="placeholder-play" aria-hidden="true">▶</span><strong>Baseline output</strong><small>Same scene and prompt · stereo track intact</small></div><div class="placeholder-bottom"><span>COMPARISON</span><span>MEDIA SLOT 06</span></div></div></div><div class="comparison-item"><div class="comparison-label comparison-ours"><span>02</span> OURS</div><div class="media-placeholder media-compare" data-slot="ours-video" data-type="video" role="img" aria-label="Reserved proposed method comparison video"><div class="placeholder-center"><span class="placeholder-play" aria-hidden="true">▶</span><strong>Proposed method</strong><small>Same scene and prompt · stereo track intact</small></div><div class="placeholder-bottom"><span>COMPARISON</span><span>MEDIA SLOT 07</span></div></div></div></div>
             <p class="comparison-note">Use headphones. Compare the apparent source position as the visible object moves. Avoid interpreting louder audio as better localization.</p>
           </div>
         </section>
 
-        <section class="content-width section-block" id="method" aria-labelledby="method-title"><div class="section-kicker"><span>06 / METHOD</span><span>HOW THE WORLDS CONNECT</span></div><div class="two-column-heading"><div><p class="overline">TECHNICAL OVERVIEW</p><h2 id="method-title">From correspondence<br /><span>to generation.</span></h2></div><p>Reserve this space for the actual architecture: visual and acoustic representations, the spatial alignment mechanism, and the trajectory-aware component. Keep the diagram faithful to the paper.</p></div><div class="media-placeholder media-figure" data-slot="method-figure" data-type="image" role="img" aria-label="Reserved space for the method architecture figure"><div class="placeholder-corner">METHOD FIGURE <span>08</span></div><div class="placeholder-center"><span class="placeholder-figure-icon" aria-hidden="true">◇ — ◈ — ◇</span><strong>Architecture / pipeline</strong><small>Use a high-resolution vector or image export · suggested 16:7</small></div><div class="placeholder-bottom"><span>HIGH-RESOLUTION IMAGE</span><span>MEDIA SLOT 08</span></div></div><p class="figure-note"><span>FIG. 02</span> Add a concise caption explaining the actual contribution once the method figure is available.</p></section>
+        <section class="content-width section-block" id="method" aria-labelledby="method-title"><div class="section-kicker"><span>07 / METHOD</span><span>HOW THE WORLDS CONNECT</span></div><div class="two-column-heading"><div><p class="overline">TECHNICAL OVERVIEW</p><h2 id="method-title">From correspondence<br /><span>to generation.</span></h2></div><p>Show how motion tracks condition StereoBind: VMB Tokens for entity-level binding, STE for absolute trajectories, and RT-RoPE for relative spatial relations.</p></div><div class="media-placeholder media-figure" data-slot="method-figure" data-type="image" role="img" aria-label="Reserved space for the method architecture figure"><div class="placeholder-corner">METHOD FIGURE <span>METHOD</span></div><div class="placeholder-center"><span class="placeholder-figure-icon" aria-hidden="true">◇ — ◈ — ◇</span><strong>StereoBind architecture</strong><small>VMB Tokens · Spatial Track Encoder · Residual Track RoPE</small></div><div class="placeholder-bottom"><span>HIGH-RESOLUTION IMAGE</span><span>METHOD FIGURE</span></div></div><p class="figure-note"><span>FIG. 02</span> Add the exact architecture figure and caption from the paper.</p></section>
 
-        <section class="evidence-wrap" id="evidence" aria-labelledby="evidence-title"><div class="content-width section-block"><div class="section-kicker"><span>07 / EVIDENCE</span><span>MEASURABLE AND PERCEPTUAL</span></div><div class="two-column-heading"><div><p class="overline">EXPERIMENTAL RESULTS</p><h2 id="evidence-title">What the results<br /><span>actually show.</span></h2></div><p>Present the strongest quantitative result alongside the qualitative examples. Use only metrics and conclusions reported in the paper; if you have a listening study, identify its protocol.</p></div><div class="media-placeholder media-figure" data-slot="results-figure" data-type="image" role="img" aria-label="Reserved space for the main results figure or table"><div class="placeholder-corner">RESULTS FIGURE <span>09</span></div><div class="placeholder-center"><span class="placeholder-figure-icon" aria-hidden="true">▥ — ▤ — ▥</span><strong>Main results / comparison table</strong><small>Spatial alignment, temporal consistency, and perceptual evaluation if measured</small></div><div class="placeholder-bottom"><span>HIGH-RESOLUTION IMAGE</span><span>MEDIA SLOT 09</span></div></div><p class="figure-note"><span>FIG. 03</span> Put the most relevant spatial and temporal evidence first; keep units, dataset names, and baselines visible.</p></div></section>
-
-        <section class="content-width final-section" aria-labelledby="paper-section-title"><div class="section-kicker"><span>08 / PAPER</span><span>RESEARCH DETAILS</span></div><div class="final-grid"><div><p class="overline">THE PAPER</p><h2 id="paper-section-title">Explore the<br /><span>full work.</span></h2><p class="final-lead">The manuscript provides the complete method, experimental setup, evaluation, and discussion behind these demonstrations.</p></div><div class="paper-panel"><h3>Abstract</h3><p id="abstract-text" class="empty-copy">[Paste the paper abstract here. Recommended: 120–220 words, matching the manuscript.]</p><div class="resource-row"><span class="resource-disabled" id="paper-link">Paper URL pending</span><span class="resource-disabled" id="code-link">Code URL pending</span></div><h3 class="citation-heading">Citation</h3><pre id="bibtex-text">[Paste the anonymous or final BibTeX entry here when appropriate.]</pre></div></div></section>
+        <section class="content-width final-section" aria-labelledby="paper-section-title"><div class="section-kicker"><span>08 / CITATION</span><span>RESEARCH DETAILS</span></div><div class="final-grid"><div><p class="overline">THE PAPER</p><h2 id="paper-section-title">Build on<br /><span>this work.</span></h2><p class="final-lead">The manuscript contains the complete formulation, model details, experimental protocol, and evaluation.</p></div><div class="paper-panel"><h3>Citation</h3><pre id="bibtex-text">[Paste the anonymous or final BibTeX entry here when appropriate.]</pre></div></div></section>
       </main>
-      <footer class="site-footer"><div class="content-width footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">◉</span><span>AV<span class="brand-slash">/</span>SPACE</span></a><span>VISUAL WORLD × ACOUSTIC WORLD</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+      <footer class="site-footer"><div class="content-width footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">◉</span><span>STEREO<span class="brand-slash">/</span>BIND</span></a><span>VISUAL WORLD × ACOUSTIC WORLD</span><a href="#top">BACK TO TOP ↑</a></div></footer>
     </div>
     <script src="./content.js" defer></script>
   </body>
