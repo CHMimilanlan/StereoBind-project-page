@@ -2,6 +2,12 @@
 
 The paper title and abstract are already filled. The page keeps media empty until you provide the actual material. Put media files in `dist/media/` and set paths in `dist/content.js`, for example `"./media/static-01.mp4"`. An empty `src` leaves a labeled placeholder visible.
 
+## Brand logo
+
+- Asset: `dist/media/stereobind-logo.png`
+- Placement: the full mark is the hero visual; compact versions appear in the header and footer.
+- Keep the transparent padding and the complete left/right wave shapes when replacing or exporting the logo.
+
 ## Paper and code links
 
 Set `paperUrl` and `codeUrl` in the `project` object near the top of `dist/content.js`. Until real URLs are supplied, the two top-of-page buttons remain disabled. Use anonymous destinations if the page is shared during double-blind review.
