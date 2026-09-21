@@ -20,24 +20,25 @@ const media = {
   "method-figure":  { src: "./media/stereobind-method.jpg", alt: "StereoBind architecture with Visual Motion Binding Tokens, Spatial Track Encoder, and Residual Track RoPE" },
 };
 
-/* Add as many objects as needed to each category. An empty src draws a slot. */
+function createResultSet(slug, label, count, note) {
+  return Array.from({ length: count }, (_, index) => {
+    const number = String(index + 1).padStart(2, "0");
+    return {
+      title: `${label} · ${number}`,
+      src: `./media/results/${slug}/${slug}-${number}.mp4`,
+      poster: "",
+      note,
+    };
+  });
+}
+
 const resultVideos = {
-  static: [
-    { title: "Static sample 01", src: "", poster: "", note: "Add a static-scene stereo result." },
-    { title: "Static sample 02", src: "", poster: "", note: "Add another static-scene result." },
-  ],
-  dynamic: [
-    { title: "Dynamic sample 01", src: "", poster: "", note: "Add a result with a clear source trajectory." },
-    { title: "Dynamic sample 02", src: "", poster: "", note: "Add another moving-scene result." },
-  ],
-  speech: [
-    { title: "Human speech 01", src: "", poster: "", note: "Add a video with a visible speaking source." },
-    { title: "Human speech 02", src: "", poster: "", note: "Add another speech result." },
-  ],
-  object: [
-    { title: "Object-centric 01", src: "", poster: "", note: "Add a result centered on one sounding object." },
-    { title: "Object-centric 02", src: "", poster: "", note: "Add another object-centric result." },
-  ],
+  "static-left": createResultSet("static-left", "Static Left", 6, "Stationary source localized on the left."),
+  "static-right": createResultSet("static-right", "Static Right", 6, "Stationary source localized on the right."),
+  "dynamic-left-to-right": createResultSet("dynamic-left-to-right", "Left to Right", 7, "Source and stereo position move from left to right."),
+  "dynamic-right-to-left": createResultSet("dynamic-right-to-left", "Right to Left", 5, "Source and stereo position move from right to left."),
+  "dynamic-left-right-left": createResultSet("dynamic-left-right-left", "Left → Right → Left", 5, "Source and stereo position reverse from right back to left."),
+  "dynamic-right-left-right": createResultSet("dynamic-right-left-right", "Right → Left → Right", 4, "Source and stereo position reverse from left back to right."),
 };
 
 if (project.paperTitle.trim()) {
@@ -91,7 +92,7 @@ for (const grid of document.querySelectorAll("[data-results]")) {
 
     const corner = document.createElement("div");
     corner.className = "placeholder-corner";
-    corner.textContent = `${category.toUpperCase()} / ${String(index + 1).padStart(2, "0")}`;
+    corner.textContent = `${category.replaceAll("-", " ").toUpperCase()} / ${String(index + 1).padStart(2, "0")}`;
     const center = document.createElement("div");
     center.className = "placeholder-center";
     const play = document.createElement("span");
@@ -127,7 +128,7 @@ for (const slot of document.querySelectorAll("[data-slot]")) {
   if (isVideo) {
     element.controls = true;
     element.playsInline = true;
-    element.preload = "none";
+    element.preload = "metadata";
     if (item.poster) element.poster = item.poster;
   } else {
     element.alt = item.alt;

@@ -25,11 +25,11 @@ Set `paperUrl` and `codeUrl` in the `project` object near the top of `dist/conte
 
 For the video slots, 16:9 MP4 with H.264 video and AAC **stereo** audio is a practical web export. A 1080p source and a still poster image are useful. Preserve the left and right channels—do not downmix to mono. For figures, prefer SVG or a high-resolution PNG/WebP with labels that remain readable on mobile.
 
-## Expandable results gallery
+## Results gallery
 
-The Results section is divided into four categories: **Static**, **Dynamic**, **Human Speech**, and **Object-Centric**. `resultVideos` in `dist/content.js` contains two empty sample objects per category. Replace each object's `title`, `note`, `src`, and optional `poster`; add more objects to the corresponding array for more videos. The layout automatically grows to accommodate them. Do not add a multi-source demonstration unless the paper scope changes.
+The Results section now follows six spatial patterns: **Static Left**, **Static Right**, **Dynamic Left to Right**, **Dynamic Right to Left**, **Dynamic Left → Right → Left**, and **Dynamic Right → Left → Right**. The 33 installed clips live under `dist/media/results/` and use sequential category filenames such as `static-left-01.mp4`.
 
-Choose category examples that actually support the paper's claims. For Dynamic clips, a clearly visible trajectory is most useful. For Human Speech and Object-Centric clips, describe what reviewers should watch and listen for in each `note`. Avoid implying that a clip tests a capability not evaluated in the manuscript.
+`createResultSet` in `dist/content.js` defines the displayed count, title, path, and note for each category. When adding or removing clips, keep the filenames sequential and update the corresponding count. Preserve the original stereo channels and do not add a multi-source demonstration unless the paper scope changes.
 
 ## Before sharing with reviewers
 
