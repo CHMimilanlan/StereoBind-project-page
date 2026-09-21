@@ -13,10 +13,11 @@ const project = {
 
 const media = {
   "hero-video":     { src: "", poster: "", alt: "Featured stereo audio-visual generation demo" },
-  "teaser-figure":  { src: "", alt: "Task teaser showing spatial correspondence over time" },
+  "teaser-figure":  { src: "./media/teaser.jpg", alt: "StereoBind teaser showing visual motion, dynamic stereo audio, and the resulting immersive experience" },
+  "dataset-figure": { src: "./media/stereoworld-29k-pipeline.jpg", alt: "StereoWorld-29K construction pipeline with data curation, AVS processing, and spatial data synthesis" },
   "baseline-video": { src: "", poster: "", alt: "Baseline audio-visual comparison" },
   "ours-video":     { src: "", poster: "", alt: "Proposed method audio-visual comparison" },
-  "method-figure":  { src: "", alt: "Method architecture and generation pipeline" },
+  "method-figure":  { src: "./media/stereobind-method.jpg", alt: "StereoBind architecture with Visual Motion Binding Tokens, Spatial Track Encoder, and Residual Track RoPE" },
 };
 
 /* Add as many objects as needed to each category. An empty src draws a slot. */

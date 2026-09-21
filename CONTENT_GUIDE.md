@@ -17,10 +17,11 @@ Set `paperUrl` and `codeUrl` in the `project` object near the top of `dist/conte
 | Slot in `dist/content.js` | Page location | Put here |
 | --- | --- | --- |
 | `hero-video` | Large featured player after the Abstract | Strongest example of dynamic spatial correspondence: a visible source moves and the stereo sound follows it |
-| `teaser-figure` | “The paper in one picture” | The task/teaser image showing visual motion and the corresponding acoustic trajectory |
+| `teaser-figure` | “See the motion. Hear it move.” | Installed teaser image showing visual motion and the corresponding acoustic trajectory (`dist/media/teaser.jpg`) |
+| `dataset-figure` | “Teaching sound where to move” | Installed StereoWorld-29K construction pipeline (`dist/media/stereoworld-29k-pipeline.jpg`) |
 | `baseline-video` | Left side of “A difference you can hear” | Baseline output for the exact same input as the right-hand clip |
 | `ours-video` | Right side of that comparison | StereoBind output, aligned to the baseline in length, framing, and loudness |
-| `method-figure` | “From correspondence to generation” | Actual method figure showing VMB Tokens, STE, and RT-RoPE |
+| `method-figure` | “From correspondence to generation” | Installed StereoBind method figure showing VMB Tokens, STE, and RT-RoPE (`dist/media/stereobind-method.jpg`) |
 
 For the video slots, 16:9 MP4 with H.264 video and AAC **stereo** audio is a practical web export. A 1080p source and a still poster image are useful. Preserve the left and right channels—do not downmix to mono. For figures, prefer SVG or a high-resolution PNG/WebP with labels that remain readable on mobile.
 
