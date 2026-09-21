@@ -17,9 +17,10 @@
         <nav aria-label="Primary navigation">
           <a href="#abstract">Abstract</a>
           <a href="#dataset">Dataset</a>
-          <a href="#results">Results</a>
           <a href="#method">Method</a>
+          <a href="#results">Results</a>
           <a href="#comparison">Comparison</a>
+          <a href="#quantitative">Quantitative</a>
         </nav>
         <span class="header-note">RESEARCH PROJECT · ANONYMOUS EDITION</span>
       </header>
@@ -61,23 +62,9 @@
           </div>
         </section>
 
-        <section class="hero-media content-width" id="experience" aria-labelledby="experience-title">
-          <div class="section-kicker"><span>02 / EXPERIENCE</span><span>HEADPHONES RECOMMENDED <span aria-hidden="true">◖◗</span></span></div>
-          <div class="feature-intro">
-            <h2 id="experience-title">See the motion.<br /><span>Hear the space.</span></h2>
-            <p>The first example should make the paper’s central idea immediately perceptible: a visible source moves, and its sound follows.</p>
-          </div>
-          <div class="media-placeholder media-feature" data-slot="hero-video" data-type="video" role="img" aria-label="Reserved space for the featured synchronized audio-visual video">
-            <div class="placeholder-corner">FEATURED DEMO <span>01</span></div>
-            <div class="placeholder-center"><span class="placeholder-play" aria-hidden="true">▶</span><strong>Featured audio-visual demo</strong><small>Place your strongest moving-sound-source video here · 16:9 · stereo audio</small></div>
-            <div class="placeholder-bottom"><span>VIDEO + STEREO AUDIO</span><span>MEDIA SLOT 01</span></div>
-          </div>
-          <div class="feature-caption"><span>THE EXPERIENCE</span><p>Visual motion and acoustic motion should tell the same story. Begin with the clearest example from the paper.</p><span>FEATURED SAMPLE</span></div>
-        </section>
-
         <section class="concept-band" id="correspondence" aria-labelledby="correspondence-title">
           <div class="content-width concept-inner">
-            <div class="section-kicker"><span>03 / CORRESPONDENCE</span><span>THE CENTRAL QUESTION</span></div>
+            <div class="section-kicker"><span>02 / CORRESPONDENCE</span><span>THE CENTRAL QUESTION</span></div>
             <div class="concept-head">
               <p class="overline">TWO WORLDS, ONE SCENE</p>
               <h2 id="correspondence-title">What we see and what we hear<br /><span>must occupy the same space.</span></h2>
@@ -93,7 +80,7 @@
         </section>
 
         <section class="content-width section-block" id="teaser" aria-labelledby="teaser-title">
-          <div class="section-kicker"><span>04 / TEASER</span><span>DYNAMIC SPATIAL CORRESPONDENCE</span></div>
+            <div class="section-kicker"><span>03 / TEASER</span><span>DYNAMIC SPATIAL CORRESPONDENCE</span></div>
           <div class="two-column-heading"><div><p class="overline">THE CORE IDEA</p><h2 id="teaser-title">See the motion.<br /><span>Hear it move.</span></h2></div><p>StereoBind uses motion tracks to bind a visible source’s trajectory to its perceived stereo position, so acoustic motion evolves with visual motion over time.</p></div>
           <a class="media-placeholder media-figure media-teaser media-diagram-link" data-slot="teaser-figure" data-type="image" href="./media/teaser.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the StereoBind teaser figure at full resolution"><div class="placeholder-corner">TEASER FIGURE <span>01</span></div><div class="placeholder-center"><span class="placeholder-figure-icon" aria-hidden="true">◎ — ↝ — ◉</span><strong>StereoBind overview</strong><small>Visual motion → dynamic spatial correspondence → immersive generation</small></div><div class="placeholder-bottom"><span>HIGH-RESOLUTION IMAGE</span><span>FIGURE 01</span></div></a>
           <p class="figure-note"><span>FIG. 01</span> StereoBind links visible source motion with the evolving position of generated stereo audio.</p>
@@ -101,12 +88,14 @@
 
         <section class="dataset-wrap" id="dataset" aria-labelledby="dataset-title">
           <div class="content-width section-block">
-            <div class="section-kicker"><span>05 / DATASET</span><span>STEREOWORLD-29K</span></div>
+            <div class="section-kicker"><span>04 / DATASET</span><span>STEREOWORLD-29K</span></div>
             <div class="two-column-heading"><div><p class="overline">DATA CONSTRUCTION</p><h2 id="dataset-title">Teaching sound<br /><span>where to move.</span></h2></div><p>StereoWorld-29K pairs stereo audio-video data with corresponding motion tracks through data curation, source discovery and verification, motion tracking, physically grounded 3D audio rendering, and diversity-driven synthesis.</p></div>
             <a class="media-placeholder media-figure media-dataset media-diagram-link" data-slot="dataset-figure" data-type="image" href="./media/stereoworld-29k-pipeline.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the StereoWorld-29K construction pipeline at full resolution"><div class="placeholder-corner">DATASET PIPELINE <span>STEREOWORLD-29K</span></div><div class="placeholder-center"><span class="placeholder-figure-icon" aria-hidden="true">DATA → TRACK → SPACE</span><strong>StereoWorld-29K construction</strong><small>Curation · AVS agent · spatial data synthesis</small></div><div class="placeholder-bottom"><span>HIGH-RESOLUTION IMAGE</span><span>FIGURE 02</span></div></a>
             <p class="figure-note"><span>FIG. 02</span> Construction pipeline for StereoWorld-29K. Open the figure to inspect the full-resolution diagram.</p>
           </div>
         </section>
+
+        <section class="content-width section-block" id="method" aria-labelledby="method-title"><div class="section-kicker"><span>05 / METHOD</span><span>STEREOBIND</span></div><div class="two-column-heading"><div><p class="overline">TECHNICAL OVERVIEW</p><h2 id="method-title">From correspondence<br /><span>to generation.</span></h2></div><p>Motion tracks condition StereoBind at complementary levels: VMB Tokens establish entity-level audio-visual binding, STE encodes absolute source trajectories, and RT-RoPE models trajectory-induced relative spatial relations.</p></div><a class="media-placeholder media-figure media-method media-diagram-link" data-slot="method-figure" data-type="image" href="./media/stereobind-method.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the StereoBind method diagram at full resolution"><div class="placeholder-corner">METHOD FIGURE <span>STEREOBIND</span></div><div class="placeholder-center"><span class="placeholder-figure-icon" aria-hidden="true">VMB · STE · RT-RoPE</span><strong>StereoBind architecture</strong><small>Entity binding · absolute trajectory · relative spatial relations</small></div><div class="placeholder-bottom"><span>HIGH-RESOLUTION IMAGE</span><span>FIGURE 03</span></div></a><p class="figure-note"><span>FIG. 03</span> StereoBind architecture with VMB Tokens, Spatial Track Encoder, and Residual Track RoPE.</p></section>
 
         <section class="content-width section-block results-section" id="results" aria-labelledby="results-title">
           <div class="section-kicker"><span>06 / RESULTS</span><span>STEREO AUDIO · HEADPHONES RECOMMENDED</span></div>
@@ -123,13 +112,22 @@
         <section class="comparison-wrap" id="comparison" aria-labelledby="compare-title">
           <div class="content-width section-block">
             <div class="section-kicker"><span>07 / SIDE BY SIDE</span><span>SAME INPUT · MATCHED LOUDNESS</span></div>
-            <div class="two-column-heading"><div><p class="overline">QUALITATIVE COMPARISON</p><h2 id="compare-title">A difference<br /><span>you can hear.</span></h2></div><p>Use exactly the same visual input for both clips. Align their start times and match playback loudness so the comparison focuses on spatial behavior.</p></div>
-            <div class="comparison-grid"><div class="comparison-item"><div class="comparison-label"><span>01</span> BASELINE</div><div class="media-placeholder media-compare" data-slot="baseline-video" data-type="video" role="img" aria-label="Reserved baseline comparison video"><div class="placeholder-center"><span class="placeholder-play" aria-hidden="true">▶</span><strong>Baseline output</strong><small>Same scene and prompt · stereo track intact</small></div><div class="placeholder-bottom"><span>COMPARISON</span><span>MEDIA SLOT 06</span></div></div></div><div class="comparison-item"><div class="comparison-label comparison-ours"><span>02</span> OURS</div><div class="media-placeholder media-compare" data-slot="ours-video" data-type="video" role="img" aria-label="Reserved proposed method comparison video"><div class="placeholder-center"><span class="placeholder-play" aria-hidden="true">▶</span><strong>Proposed method</strong><small>Same scene and prompt · stereo track intact</small></div><div class="placeholder-bottom"><span>COMPARISON</span><span>MEDIA SLOT 07</span></div></div></div></div>
-            <p class="comparison-note">Use headphones. Compare the apparent source position as the visible object moves. Avoid interpreting louder audio as better localization.</p>
+            <div class="two-column-heading"><div><p class="overline">QUALITATIVE COMPARISON</p><h2 id="compare-title">Six scenes.<br /><span>Six systems.</span></h2></div><p>Each row uses the same input across all six systems. Compare visual fidelity, audio quality, and whether the perceived stereo position follows the visible source motion.</p></div>
+            <div class="comparison-matrix-shell" role="region" aria-label="Six by six qualitative video comparison" tabindex="0">
+              <div class="comparison-matrix" data-comparison-matrix></div>
+            </div>
+            <p class="comparison-note">Headphones recommended. The first column is StereoBind. On smaller screens, scroll horizontally to compare every model within the same sample.</p>
           </div>
         </section>
 
-        <section class="content-width section-block" id="method" aria-labelledby="method-title"><div class="section-kicker"><span>08 / METHOD</span><span>STEREOBIND</span></div><div class="two-column-heading"><div><p class="overline">TECHNICAL OVERVIEW</p><h2 id="method-title">From correspondence<br /><span>to generation.</span></h2></div><p>Motion tracks condition StereoBind at complementary levels: VMB Tokens establish entity-level audio-visual binding, STE encodes absolute source trajectories, and RT-RoPE models trajectory-induced relative spatial relations.</p></div><a class="media-placeholder media-figure media-method media-diagram-link" data-slot="method-figure" data-type="image" href="./media/stereobind-method.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the StereoBind method diagram at full resolution"><div class="placeholder-corner">METHOD FIGURE <span>STEREOBIND</span></div><div class="placeholder-center"><span class="placeholder-figure-icon" aria-hidden="true">VMB · STE · RT-RoPE</span><strong>StereoBind architecture</strong><small>Entity binding · absolute trajectory · relative spatial relations</small></div><div class="placeholder-bottom"><span>HIGH-RESOLUTION IMAGE</span><span>FIGURE 03</span></div></a><p class="figure-note"><span>FIG. 03</span> StereoBind architecture with VMB Tokens, Spatial Track Encoder, and Residual Track RoPE.</p></section>
+        <section class="quantitative-wrap" id="quantitative" aria-labelledby="quantitative-title">
+          <div class="content-width section-block">
+            <div class="section-kicker"><span>08 / QUANTITATIVE RESULTS</span><span>QUALITY · SYNC · SPATIAL FIDELITY</span></div>
+            <div class="two-column-heading"><div><p class="overline">QUANTITATIVE RESULTS</p><h2 id="quantitative-title">Measured across<br /><span>quality and space.</span></h2></div><p>We compare visual quality, audio quality, audio-visual synchronization, and stereo spatial fidelity. Best results are shown in bold and second-best results are underlined.</p></div>
+            <a class="media-placeholder media-figure media-quantitative media-diagram-link" data-slot="quantitative-results" data-type="image" href="./media/quantitative-results.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open the quantitative comparison table at full resolution"><div class="placeholder-corner">QUANTITATIVE COMPARISON <span>TABLE 01</span></div><div class="placeholder-center"><span class="placeholder-figure-icon" aria-hidden="true">QUALITY · SYNC · SPACE</span><strong>Joint video-audio generation results</strong><small>Visual quality · audio quality · stereo spatial fidelity</small></div><div class="placeholder-bottom"><span>HIGH-RESOLUTION IMAGE</span><span>TABLE 01</span></div></a>
+            <p class="figure-note"><span>TABLE 01</span> Comparison results on joint video-audio generation. Open the table to inspect all metrics at full resolution.</p>
+          </div>
+        </section>
 
         <section class="content-width final-section" aria-labelledby="paper-section-title"><div class="section-kicker"><span>09 / CITATION</span><span>RESEARCH DETAILS</span></div><div class="final-grid"><div><p class="overline">THE PAPER</p><h2 id="paper-section-title">Build on<br /><span>this work.</span></h2><p class="final-lead">The manuscript contains the complete formulation, model details, experimental protocol, and evaluation.</p></div><div class="paper-panel"><h3>Citation</h3><pre id="bibtex-text">[Paste the anonymous or final BibTeX entry here when appropriate.]</pre></div></div></section>
       </main>
