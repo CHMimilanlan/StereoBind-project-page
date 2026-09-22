@@ -216,8 +216,8 @@
 .dataset-wrap { background:linear-gradient(180deg,#0d1928,#0a1421); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
 .dataset-wrap .section-block { padding-bottom:95px; }
 .media-teaser { aspect-ratio:1663 / 750; min-height:0; }
-.media-dataset { aspect-ratio:1648 / 890; min-height:0; }
-.media-method { aspect-ratio:1798 / 984; min-height:0; }
+.media-dataset { aspect-ratio:1630 / 890; min-height:0; }
+.media-method { aspect-ratio:1806 / 985; min-height:0; }
 .media-diagram-link.is-filled { display:block; background:#fff; border:1px solid rgba(141,181,198,.42); cursor:zoom-in; transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease; }
 .media-diagram-link.is-filled img { object-fit:contain; background:#fff; }
 .media-diagram-link.is-filled::after { content:"OPEN FULL SIZE  ↗"; position:absolute; z-index:2; right:14px; bottom:14px; padding:7px 10px; border-radius:999px; background:rgba(7,13,23,.88); color:#d7e7ec; font:600 10px Arial,sans-serif; letter-spacing:.11em; opacity:0; transform:translateY(4px); transition:opacity .2s ease,transform .2s ease; }
